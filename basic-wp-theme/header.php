@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fishtaco</title>
+  <title>wp_base</title>
   <?php wp_head(); ?>
 </head>
 
@@ -16,7 +16,7 @@
         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
       ?>
       <a class="logo" href="/">
-        <img src="<?php echo esc_url( $image[0] ); ?>" alt="Fish Taco">
+        <img src="<?php echo esc_url( $image[0] ); ?>" alt="wp_base">
       </a>
       <nav class="desktop-nav">
         <?php
@@ -50,7 +50,7 @@
         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
       ?>
       <a class="logo" href="/">
-        <img src="<?php echo esc_url( $image[0] ); ?>" alt="Fish Taco">
+        <img src="<?php echo esc_url( $image[0] ); ?>" alt="wp_base">
       </a>
       <a class="order-now" href="/contact">ORDER NOW</a>
       </section>

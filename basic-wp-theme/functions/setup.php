@@ -33,13 +33,13 @@ function wps_deregister_styles() {
 }
 
 // stop loading wp-embed.min.js and jQuery
-function fishtaco_stop_loading_wp_embed_and_jquery() {
+function wp_base_stop_loading_wp_embed_and_jquery() {
 	if (!is_admin()) {
 		wp_deregister_script('wp-embed');
 		// wp_deregister_script('jquery');  // Bonus: remove jquery too if it's not required
 	}
 }
-add_action('init', 'fishtaco_stop_loading_wp_embed_and_jquery');
+add_action('init', 'wp_base_stop_loading_wp_embed_and_jquery');
 
 // remove wp emoji scripts and styles
 remove_action('wp_head', 'print_emoji_detection_script', 7);

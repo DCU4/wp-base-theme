@@ -1,5 +1,5 @@
 <?php
-function fishtaco_setup_image_sizes() {
+function wp_base_setup_image_sizes() {
 
   add_image_size( 'press', 351, 263, true );
 
@@ -8,4 +8,4 @@ function fishtaco_setup_image_sizes() {
 
 }
 
-add_action( 'after_setup_theme', 'fishtaco_setup_image_sizes' );
+add_action( 'after_setup_theme', 'wp_base_setup_image_sizes' );

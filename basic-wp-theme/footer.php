@@ -19,7 +19,7 @@
     <section class="footer-bottom">
       <section class="copyright">
         <span>
-          &#169; Fish Taco. All Rights Reserved. <span class="pipe">|</span>
+          &#169; wp_base. All Rights Reserved. <span class="pipe">|</span>
           <a href="#">Privacy Policy</a> <span class="pipe">|</span> <a href="#">Terms of Use</a>
         </span>
       </section>
