@@ -1,4 +1,4 @@
-# This theme is lightning fast and easy to set up. Follow the documentation below for a full understanding of how to set templates and styles up.
+This theme is lightning fast and easy to set up. Follow the documentation below for a full understanding of how to set templates and styles up.
 
 # Webpack Set Up
 
