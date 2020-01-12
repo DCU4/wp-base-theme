@@ -1,0 +1,23 @@
+
+// breakpoints
+$tablet: '768px';
+$laptop: '1080px';
+$desktop: '1440px';
+
+// colors
+$taco-red: #ed2c45;
+$taco-purple: #20293a;
+$taco-deep-purple: #101724;
+$taco-grey: #E8E8E8;
+$taco-beige: #FFF7F0;
+$taco-yellow: #FDD181;
+$taco-orange: #e4a763;
+
+// max width
+$max-width: 1240px;
+
+//animations
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

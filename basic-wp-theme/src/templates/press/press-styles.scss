@@ -1,0 +1,165 @@
+.press-hero {
+  margin-top: 53px;
+  padding: 50px 0;
+  background-color: $taco-red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint($laptop) {
+    margin-top: 73px;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    @include font-size(5);
+    color: #FFF;
+
+    @include breakpoint($laptop) {
+      @include font-size(6);
+    }
+  }
+}
+
+.press-page {
+  .press-post-basic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 20px auto;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+
+    &::after {
+      content: "";
+      flex: 0 0 33%;
+    }
+
+    @include breakpoint($laptop) {
+      margin: 100px auto 0;
+      flex-direction: row;
+      align-items: unset;
+      width: auto;
+    }
+
+    .press-post-content {
+      width: auto;
+      padding-bottom: 60px;
+      opacity: 0;
+
+      &.fade-in {
+        animation: fade-in .5s ease forwards;
+        animation-delay: .5s;
+      }
+
+      @include breakpoint($laptop) {
+        width: 351px;
+      }
+
+      .date {
+        @include font-size(1);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgba(32, 41, 58, 0.4);
+        margin-bottom: 10px;
+
+        @include breakpoint($laptop) {
+          @include font-size(1.4);
+        }
+      }
+
+      .press-title {
+        @include font-size(1.8);
+        line-height: 1.23;
+
+        @include breakpoint($laptop) {
+          @include font-size(2.6);
+        }
+      }
+    }
+  }
+
+  .pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+
+    span,
+    a {
+      color: rgba(32, 41, 58, 0.5);
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 15px;
+      font-family: Rubik, sans-serif;
+
+      &.current {
+        color: $taco-purple;
+      }
+    }
+  }
+}
+
+.press-single {
+  max-width: 1080px;
+  margin: 90px auto;
+
+  @include breakpoint($laptop) {
+    margin: 150px auto 0;
+  }
+
+  .press-single-content {
+    width: 90%;
+    margin: 0 auto;
+
+    @include breakpoint($laptop) {
+      width: auto;
+    }
+
+    .date {
+      @include font-size(1);
+      font-weight: bold;
+      text-transform: uppercase;
+      color: rgba(32, 41, 58, 0.5);
+      margin-bottom: 5px;
+
+      @include breakpoint($laptop) {
+        @include font-size(1.4);
+      }
+    }
+
+    .press-title {
+      @include font-size(2);
+      line-height: 1.23;
+      padding-bottom: 30px;
+
+      @include breakpoint($laptop) {
+        @include font-size(8);
+        padding-bottom: 50px;
+      }
+    }
+
+    article {
+      padding: 0;
+
+      @include breakpoint($laptop) {
+        padding: 85px 180px;
+      }
+
+      p {
+        @include font-size(1.8);
+        line-height: 32px;
+      }
+
+      a {
+        @include font-size(1.8);
+        color: $taco-red;
+        line-height: 32px;
+      }
+    }
+  }
+}

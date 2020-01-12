@@ -1,0 +1,171 @@
+.home-hero {
+  padding: 22% 1rem;
+  @extend %hero;
+
+  @include breakpoint($laptop) {
+    padding: 18rem 1rem 14rem;
+  }
+
+  h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    @include font-size(7);
+    word-break: break-word;
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 0.89;
+  }
+
+  a {
+    @extend %home-button;
+    background-color: $taco-red;
+    color: #ffffff;
+  }
+
+
+}
+
+
+.block {
+  text-align: center;
+  padding: 30px 11px 250px;
+  @include breakpoint($tablet) {
+    padding: 14rem  100px;
+  }
+  @include breakpoint($laptop) {
+    padding: 12rem 120px 10rem;
+  }
+  @include breakpoint($desktop) {
+    padding: 12rem 180px 10rem;
+  }
+  h2, h3 {
+    @include font-size(3);
+    text-transform: uppercase;
+  }
+  p {
+    line-height: 1.54;
+    margin: 10px 0;
+    @include breakpoint($laptop) {
+      margin: 20px auto 30px;
+    }
+
+  }
+  a {
+    @extend %home-button;
+    color: #ffffff;
+    background-color: $taco-purple;
+    padding: 16px 20px;
+  }
+  .block-content {
+    width:90%;
+    margin: 30px auto 0;
+    @include breakpoint($tablet) {
+      width:60%;
+      margin: 50px auto 0;
+    }
+    @include breakpoint($laptop) {
+      width:496px;
+      margin: 30px auto 0;
+    }
+  }
+  .img-wrapper {
+    width:247px;
+    @include breakpoint($tablet) {
+      width:50%;
+    }
+    @include breakpoint($laptop) {
+      width:496px;
+    }
+  }
+  &.flex {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    @include breakpoint($laptop) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+  &.flex__reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    @include breakpoint($laptop) {
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items:center;
+    }
+  }
+
+
+  &__catch-up {
+    background-color: #FFFFFF;
+    .block-content {
+      text-align: left;
+      margin: 30px 90px 0 0;
+    }
+  }
+  &__catering {
+    background-color: $taco-orange;
+
+    @include breakpoint($laptop) {
+      margin-top: -250px;
+    }
+    .block-content {
+      @include breakpoint($laptop) {
+        margin: 30px 0 0 90px;
+      }
+    }
+    a {
+      background-color: $taco-purple;
+    }
+    img {
+          margin-top: -215px;
+      @include breakpoint($laptop) {
+      margin-top: -250px;
+    }
+    }
+  }
+  &__contact {
+    background-color: $taco-purple;
+
+    @include breakpoint($laptop) {
+      align-items:center;
+    }
+    .block-content{
+      @include breakpoint($laptop) {
+        margin: 30px 90px 0 0px;
+      }
+
+      h3, p {
+        color: #FFF;
+      }
+      a {
+        background-color: #FFF;
+        color: $taco-purple;
+      }
+    }
+    img {
+          margin-top: -215px;
+      @include breakpoint($laptop) {
+      margin-top: -250px;
+    }
+    }
+  }
+  &:last-child {
+
+    padding: 30px 11px 100px;
+    @include breakpoint($tablet) {
+      padding: 14rem  100px;
+    }
+    @include breakpoint($laptop) {
+      padding: 12rem 120px 10rem;
+    }
+    @include breakpoint($desktop) {
+      padding: 12rem 180px 10rem;
+    }
+
+  }
+
+}

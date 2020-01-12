@@ -1,0 +1,82 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  // @include breakpoint($laptop) {
+  //   font-size: 70%;
+  // }
+}
+
+body {
+  background-color: #FFFFFF;
+  margin: 0;
+  font-family: Rubik, sans-serif;
+}
+
+ul {
+  margin: 0;
+}
+
+a, p, span {
+  @include font-size(1.6);
+}
+h2, p, h3 {
+  color: $taco-purple;
+}
+
+h1, h2, h3 {
+  font-family: Cubano, sans-serif;
+  font-weight:normal;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+h3{
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+  @include breakpoint($laptop) {
+    font-size: 26px;
+  }
+}
+
+img {
+  width:100%;
+  height:auto;
+}
+
+a {
+  text-decoration: none;
+  color: $taco-red;
+  @include font-size(2.6);
+}
+
+main {
+  opacity:0;
+  animation: fade-in .8s ease .3s forwards;
+}
+
+.hero {
+  // padding: 22% 1rem;
+  padding: 100px 1rem 50px;
+  @extend %hero;
+  background-position: top;
+  @include breakpoint($laptop) {
+    padding: 22rem 1rem 17rem;
+  }
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    width:90%;
+    margin: 0 auto;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    @include breakpoint($laptop) {
+      @include font-size(6);
+      width:50%;
+    }
+  }
+}
