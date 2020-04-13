@@ -23,7 +23,7 @@ function wp_base_scripts() {
   if(is_front_page()){
     wp_enqueue_style( 'wp_base-home-style', get_template_directory_uri() . '/dist/css/home.css', array(), date("H:i:s"));
     wp_enqueue_script('wp_base-home');
-  } else if (is_page('press') || is_single()) {
+  } else if (is_page('press') || is_singular()) {
     wp_enqueue_style( 'wp_base-press', get_template_directory_uri() . '/dist/css/press.css', array(), date("H:i:s"));
     wp_enqueue_script('wp_base-press');
   } else {
